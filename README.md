@@ -329,4 +329,84 @@ Curso da Alura (Pos Tech) que ensina a usar a biblioteca Pandas para análise e 
 
 *Atualizado em: 30/06/2026*
 
+---
+
+## Curso 5 - Python: Inteligência Artificial Aplicada
+
+### Sobre o curso
+Curso da Alura (Pos Tech) que ensina Python do zero com foco prático em Inteligência Artificial, integrando a API Gemini do Google para criar chatbots e automatizar tarefas usando Google Colab.
+
+### Aula 01 - Fundamentos de Python para iniciantes
+#### Conceitos
+- Introdução ao Python e configuração do **Google Colab** como ambiente de desenvolvimento
+- Células de código e texto no Colab; uso da função `print()`
+- **Variáveis**: criação, atribuição e atualização de valores
+- **Tipos de dados**: `int`, `float`, `str`, `bool`
+- Operações matemáticas: `+`, `-`, `*`, `/`, `//`, `%`, `**`
+- **Concatenação de strings** com `+` e conversão de tipos com `str()`, `int()`, `float()`
+- Métodos de strings: `.lower()`, `.upper()`, `.strip()`, `.replace()`
+- Captura de dados do usuário com `input()` e formatação com **f-strings**
+- **Condicionais**: `if`, `elif`, `else` e operadores lógicos (`and`, `or`, `not`)
+- **Indentação** em Python como parte da sintaxe (4 espaços por nível)
+
+---
+
+### Aula 02 - Conectando Python e IA com Google Colab
+#### Conceitos
+- Instalação e configuração da biblioteca `google-genai`
+- Autenticação com `GOOGLE_API_KEY` via `userdata.get()`
+- Envio de prompts para o modelo **Gemini** com `client.models.generate_content()`
+- **Loops `while`**: repetição com condição, `break` para sair do loop
+- Criação de **chatbots** com histórico de mensagens em lista
+- **Estruturas de dados**: listas (`list`), dicionários (`dict`)
+- Função `len()` para contar elementos
+- **Índices negativos** em listas para acessar do final
+- Uso da API Gemini com contexto de conversa
+
+---
+
+### Aula 03 - Estruturas de repetição e funções em Python
+#### Conceitos
+- **Loop `for`**: iterar sobre listas, strings e ranges
+- **Funções**: definição com `def`, parâmetros, `return`
+- Simplificação de código com funções reutilizáveis
+- **Operador de resto** `%` para verificar paridade e ciclos
+- Resumo de e-mails e textos usando a API Gemini
+- Padronização de descrições de produtos com LLMs
+- Integração de funções Python com chamadas de API
+
+---
+
+### Aula 04 - Manipulação de arquivos e dados em Python
+#### Conceitos
+- Leitura e escrita de arquivos com `open()`, `read()`, `write()`, `with`
+- Importação e uso da biblioteca **Pandas** para leitura de CSV
+- Manipulação de DataFrames: selecionar colunas, filtrar linhas
+- Desafios de gerenciamento de dados financeiros (Bytebank)
+- Salvamento de resultados em CSV com `.to_csv()`
+
+---
+
+### Aula 05 - Manipulação e filtragem de dados com Pandas
+#### Conceitos
+- Filtragem avançada com condições booleanas
+- Métodos `.loc[]` e `.iloc[]` para seleção de linhas e colunas
+- Análise de sentimento de textos usando a API Gemini
+- Filtragem de recompensas por critérios
+- Definição de índice personalizado com `.set_index()`
+
+---
+
+### Aula 06 - Processamento de resenhas com Inteligência Artificial
+#### Conceitos
+- **Tratamento de erros** com `try`, `except`, `finally`
+- Categorização automática de resenhas negativas com Gemini
+- Execução local de modelos de IA (Ollama)
+- **Modularização** de código com funções e módulos Python
+- Pipeline completo: leitura de CSV → processamento com IA → salvamento de resultados
+
+---
+
+*Atualizado em: 30/06/2026*
+
 *Atualizado em: 30/06/2026*
