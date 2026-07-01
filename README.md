@@ -275,4 +275,57 @@ print(f"Preco final com desconto: {aplicar(valor)}")
 
 *Atualizado em: 30/06/2026*
 
+---
+
+## Curso 4 - Pandas: conhecendo a biblioteca
+
+### Sobre o curso
+Curso da Alura (Pos Tech) que ensina a usar a biblioteca Pandas para análise e manipulação de dados em Python, utilizando um dataset de imóveis para alugar.
+
+### Aula 01 - Importando os dados
+#### Conceitos
+- O que é o Pandas e para que serve
+- Estruturas de dados principais: **Series** (unidimensional, com índices) e **DataFrame** (tabular, bidimensional)
+- Como importar um arquivo CSV com `pd.read_csv()`
+- Explorando o DataFrame com `.head()`, `.tail()`, `.shape`, `.info()`, `.describe()`
+- Selecionando colunas e usando `.value_counts()` e `.groupby()` para agrupar dados
+- Filtrando linhas com o método `.query()`
+
+---
+
+### Aula 02 - Analisando e filtrando os dados
+#### Conceitos
+- Cálculo de médias por categoria com `.groupby().mean()`
+- Análise de percentuais com `.value_counts(normalize=True)`
+- Filtros com operadores booleanos `&` (e) e `|` (ou)
+- Uso do método `.query()` para seleções expressivas
+- Renomeando colunas com `.rename()`
+
+---
+
+### Aula 03 - Tratando e filtrando dados
+#### Conceitos
+- Identificar dados nulos com `.isnull().sum()`
+- Preencher valores nulos com `.fillna()`
+- Remover linhas com dados nulos com `.dropna()`
+- Remover linhas e colunas com `.drop(indices, axis=0)` e `.drop(colunas, axis=1)`
+- Aplicar filtros combinados com `&` e `|`
+- Salvar DataFrames em CSV com `.to_csv('arquivo.csv', index=False)`
+- Salvar em outros formatos: `.to_excel()`, `.to_json()`
+
+---
+
+### Aula 04 - Manipulando os dados
+#### Conceitos
+- Criar colunas numéricas com operações aritméticas: `df['nova'] = df['a'] + df['b']`
+- Criar colunas categóricas com `np.select()` ou condições
+- Criar colunas binarias com `.apply(lambda x: True if condicao else False)`
+- Usar `.assign()` para criar colunas de forma encadeada
+- Usar `.apply()` com funções lambda para transformações
+- Substituir valores com `.replace(valor_antigo, valor_novo)`
+
+---
+
+*Atualizado em: 30/06/2026*
+
 *Atualizado em: 30/06/2026*
