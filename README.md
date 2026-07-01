@@ -10,6 +10,7 @@ Repositorio com resumos e anotacoes dos cursos concluidos na Alura (Pos Tech).
 |---|---|---|
 | 1 | Praticando Python: condicionais if, elif e else | 30/06/2026 |
 | 2 | Praticando Python: lacos for e while | 30/06/2026 |
+| 3 | Praticando Python: funcoes | 30/06/2026 |
 
 ---
 
@@ -166,5 +167,112 @@ while True:
 ```
 
 ---
+
+## Curso 3 — Funcoes em Python
+
+### O que sao funcoes?
+
+Funcoes sao blocos de codigo reutilizaveis que executam uma tarefa especifica. Sao definidas com a palavra-chave `def` e podem receber parametros e retornar valores.
+
+### Estrutura basica
+
+```python
+def nome_da_funcao(parametro1, parametro2):
+    # bloco de codigo
+    return resultado
+```
+
+### Tipos de funcoes
+
+#### Funcao simples
+Recebe parametros e retorna um valor calculado.
+```python
+def calcular_idade(ano_nascimento, ano_atual):
+    return ano_atual - ano_nascimento
+```
+
+#### Funcao lambda
+Funcao anonima de uma linha, ideal para operacoes simples e rapidas.
+```python
+soma = lambda x, y: x + y
+multiplica = lambda x, y: x * y
+```
+
+#### Closure
+Funcao interna que lembra variaveis da funcao externa mesmo apos sua execucao.
+```python
+def criar_desconto(porcentagem):
+    def aplicar(valor):
+        return valor - (valor * porcentagem / 100)
+    return aplicar
+
+desconto10 = criar_desconto(10)
+print(desconto10(200))  # 180.0
+```
+
+#### Funcao recursiva
+Funcao que chama a si mesma. Precisa sempre de uma condicao de parada.
+```python
+def soma_recursiva(n):
+    if n == 1:
+        return 1
+    return n + soma_recursiva(n - 1)
+```
+
+### Funcoes built-in utilizadas
+
+| Funcao | Descricao |
+|---|---|
+| `len()` | Conta o numero de caracteres/elementos |
+| `sum()` | Soma os elementos de uma lista |
+| `map()` | Aplica uma funcao a cada elemento de uma sequencia |
+| `filter()` | Filtra elementos de uma sequencia com base em uma condicao |
+| `zip()` | Junta duas ou mais listas em pares |
+| `int()`, `float()`, `str()` | Convertem tipos de dados |
+
+### Exercicios praticados
+
+| Exercicio | Conceito |
+|---|---|
+| Calculando a idade | Funcao simples com parametros e `return` |
+| Contador de caracteres | Funcao com `len()` |
+| Saudacao personalizada | Funcao + `if/elif/else` |
+| Conversor de tipos | Duas funcoes: converter `str` -> `int` e verificar |
+| Calculando total de vendas | `input().split()` + `map()` + `sum()` |
+| Filtrando numeros pares | `filter()` + `lambda` + `join()` |
+| Juntando listas de produtos | `zip()` para unir produtos e precos |
+| Calculadora com lambda | `lambda` para as 4 operacoes matematicas |
+| Gerador de funcoes personalizadas | Closure para calcular descontos |
+| Somando numeros recursivamente | Funcao recursiva com condicao de parada |
+
+### Exemplos de gabarito
+
+```python
+# Filtrando numeros pares com filter + lambda
+numeros = input("Digite os numeros separados por espaco: ").split()
+pares = filter(lambda x: int(x) % 2 == 0, numeros)
+print("Numeros pares:", " ".join(pares))
+
+# Juntando listas com zip
+produtos = input("Digite os produtos separados por virgula: ").split(",")
+precos = input("Digite os precos separados por virgula: ").split(",")
+for produto, preco in zip(produtos, precos):
+    print(f"{produto.strip()}: {preco.strip()}")
+
+# Closure de desconto
+def criar_desconto(porcentagem):
+    def aplicar_desconto(valor):
+        return valor * (1 - porcentagem / 100)
+    return aplicar_desconto
+
+desconto = int(input("Digite a porcentagem de desconto: "))
+valor = float(input("Digite o valor da compra: "))
+aplicar = criar_desconto(desconto)
+print(f"Preco final com desconto: {aplicar(valor)}")
+```
+
+---
+
+*Atualizado em: 30/06/2026*
 
 *Atualizado em: 30/06/2026*
