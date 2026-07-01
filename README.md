@@ -11,6 +11,7 @@ Repositorio com resumos e anotacoes dos cursos concluidos na Alura (Pos Tech).
 | 1 | Praticando Python: condicionais if, elif e else | 30/06/2026 |
 | 2 | Praticando Python: lacos for e while | 30/06/2026 |
 | 3 | Praticando Python: funcoes | 30/06/2026 |
+| 4 | Pandas: conhecendo a biblioteca | 30/06/2026 |
 
 ---
 
